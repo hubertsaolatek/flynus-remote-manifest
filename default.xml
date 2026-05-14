@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="aosp" fetch=".." review="https://android-review.googlesource.com/"/>
-  <remote name="arpi" fetch="https://github.com/android-rpi"/>
+  <remote name="flynus" fetch="https://github.com/hubertsaolatek" />
   
   <default remote="aosp" revision="refs/tags/android-13.0.0_r1" sync-j="4"/>
   
-  <project name="RpLauncher" path="vendor/arpi/RpLauncher" remote="arpi" revision="arpi-12" groups="local::default"/>
+  <project name="RpLauncher" path="vendor/arpi/RpLauncher" remote="flynus" revision="arpi-12" groups="local::default"/>
   <project name="build_make" path="build/make" remote="arpi" revision="arpi-13" groups="local::default">
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
@@ -75,11 +75,11 @@
   <project name="device/sample" groups="pdk"/>
   <project name="device/ti/beagle-x15" path="device/ti/beagle_x15" groups="beagle_x15,device,pdk"/>
   <project name="device/ti/beagle-x15-kernel" path="device/ti/beagle_x15-kernel" groups="beagle_x15,device,pdk" clone-depth="1"/>
-  <project name="device_arpi_rpi4" path="device/arpi/rpi4" remote="arpi" revision="arpi-13" groups="local::default"/>
+  <project name="device_arpi_rpi4" path="device/arpi/rpi4" remote="flynus" revision="arpi-13" groups="local::default"/>
   <project name="external_mesa3d" path="external/mesa3d" remote="arpi" revision="v3d-22.2" groups="local::default"/>
   <project name="external_v4l2_codec2" path="external/v4l2_codec2" remote="arpi" revision="arpi-13" groups="local::default"/>
   <project name="frameworks_av" path="frameworks/av" remote="arpi" revision="arpi-13" groups="local::default"/>
-  <project name="hardware_arpi" path="hardware/arpi" remote="arpi" revision="arpi-13" groups="local::default"/>
+  <project name="hardware_arpi" path="hardware/arpi" remote="flynus" revision="arpi-13" groups="local::default"/>
   <project name="hardware_broadcom_libbt" path="hardware/broadcom/libbt" remote="arpi" revision="arpi-13" groups="local::default"/>
   <project name="hardware_interfaces" path="hardware/interfaces" remote="arpi" revision="arpi-13" groups="local::default"/>
   <project name="kernel/configs" groups="pdk,vts"/>
